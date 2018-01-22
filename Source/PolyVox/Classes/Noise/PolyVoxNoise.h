@@ -31,7 +31,7 @@
 
 //namespace VoxelGenerator
 //{
-	UENUM()		//"BlueprintType" is essential to include
+	UENUM(BlueprintType)		//"BlueprintType" is essential to include
 	enum class EVoxelNoiseType : uint8
 	{
 		Value 			UMETA(DisplayName = "Value"),
@@ -44,7 +44,7 @@
 		WhiteNoise		UMETA(DisplayName = "WhiteNoise")
 	};
 
-	UENUM()		//"BlueprintType" is essential to include
+	UENUM(BlueprintType)		//"BlueprintType" is essential to include
 	enum class EVoxelInterp : uint8
 	{
 		InterpLinear 	UMETA(DisplayName = "InterpLinear"),
@@ -52,7 +52,7 @@
 		InterpQuintic	UMETA(DisplayName = "InterpQuintic")
 	};
 
-	UENUM()		//"BlueprintType" is essential to include
+	UENUM(BlueprintType)		//"BlueprintType" is essential to include
 	enum class EVoxelFractalType : uint8
 	{
 		FBM 			UMETA(DisplayName = "FBM"),
@@ -61,7 +61,7 @@
 	};
 
 
-	UENUM()		//"BlueprintType" is essential to include
+	UENUM(BlueprintType)		//"BlueprintType" is essential to include
 	enum class EVoxelCellularDistanceFunction : uint8
 	{
 		Euclidean 		UMETA(DisplayName = "Euclidean"),
@@ -69,7 +69,7 @@
 		Natural			UMETA(DisplayName = "Natural")
 	};
 
-	UENUM()		//"BlueprintType" is essential to include
+	UENUM(BlueprintType)		//"BlueprintType" is essential to include
 	enum class EVoxelCellularReturnType : uint8
 	{
 		CellValue 		UMETA(DisplayName = "CellValue"),
@@ -82,7 +82,7 @@
 		Distance2Div	UMETA(DisplayName = "Distance2Div")
 	};
 
-	USTRUCT()
+	USTRUCT(BlueprintType)
 	struct FVoxelNoiseSettings
 	{
 		GENERATED_BODY()
